@@ -1,0 +1,640 @@
+# 🚀 Pseudocode Day 25 – IF & ELSE (Decision Making)
+
+> 📌 Difficulty: Beginner
+>
+> 🎯 Category: Pseudocode
+>
+> ⭐ Interview Importance: ⭐⭐⭐⭐⭐
+>
+> ⏳ Revision Time: 20 Minutes
+>
+> 🔥 XP: 200
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📝 What is Decision Making?
+
+Decision Making means choosing one action based on a condition.
+
+Just like in real life:
+
+```text
+IF it rains
+
+↓
+
+Take Umbrella
+
+ELSE
+
+Do not take Umbrella
+```
+
+Programming follows the same logic.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 IF Statement
+
+## Definition
+
+The **IF** statement executes a block of code **only if the condition is TRUE**.
+
+### Syntax
+
+```text
+START
+
+INPUT Variable
+
+IF Condition
+
+    OUTPUT Result
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🌍 Real-Life Example
+
+```text
+IF Traffic Signal is Green
+
+↓
+
+Go
+
+Otherwise
+
+Wait
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Example 1 – Positive Number
+
+## Problem
+
+Check whether a number is positive.
+
+### Algorithm
+
+```text
+1. Start
+
+2. Read Number
+
+3. If Number > 0
+
+4. Print Positive
+
+5. Stop
+```
+
+### Pseudocode
+
+```text
+START
+
+INPUT Number
+
+IF Number > 0
+
+    OUTPUT "Positive"
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 ELSE Statement
+
+## Definition
+
+The **ELSE** statement executes when the **IF condition is FALSE**.
+
+### Syntax
+
+```text
+START
+
+INPUT Variable
+
+IF Condition
+
+    OUTPUT True Result
+
+ELSE
+
+    OUTPUT False Result
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🌍 Real-Life Example
+
+```text
+IF Today is Sunday
+
+↓
+
+Play Cricket
+
+ELSE
+
+Study
+```
+
+Only one block will execute.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Example 2 – Positive or Negative
+
+### Problem
+
+Check whether a number is Positive or Negative.
+
+### Pseudocode
+
+```text
+START
+
+INPUT Number
+
+IF Number > 0
+
+    OUTPUT "Positive"
+
+ELSE
+
+    OUTPUT "Negative"
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Example 3 – Even or Odd
+
+### Condition
+
+```text
+Number % 2 == 0
+```
+
+### Pseudocode
+
+```text
+START
+
+INPUT Number
+
+IF Number % 2 == 0
+
+    OUTPUT "Even"
+
+ELSE
+
+    OUTPUT "Odd"
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Example 4 – Voting Eligibility
+
+Condition
+
+```text
+Age >= 18
+```
+
+### Pseudocode
+
+```text
+START
+
+INPUT Age
+
+IF Age >= 18
+
+    OUTPUT "Eligible to Vote"
+
+ELSE
+
+    OUTPUT "Not Eligible"
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Example 5 – Greater of Two Numbers
+
+### Pseudocode
+
+```text
+START
+
+INPUT A
+
+INPUT B
+
+IF A > B
+
+    OUTPUT "A is Greater"
+
+ELSE
+
+    OUTPUT "B is Greater"
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Example 6 – Pass or Fail
+
+Condition
+
+```text
+Marks >= 35
+```
+
+### Pseudocode
+
+```text
+START
+
+INPUT Marks
+
+IF Marks >= 35
+
+    OUTPUT "Pass"
+
+ELSE
+
+    OUTPUT "Fail"
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 💻 Java vs Pseudocode
+
+## Pseudocode
+
+```text
+IF Marks >= 35
+
+    OUTPUT "Pass"
+
+ELSE
+
+    OUTPUT "Fail"
+```
+
+↓
+
+## Java
+
+```java
+if(marks >= 35){
+
+    System.out.println("Pass");
+
+}
+else{
+
+    System.out.println("Fail");
+
+}
+```
+
+### Difference
+
+| Pseudocode | Java |
+|------------|------|
+| Easy English | Programming Language |
+| No Syntax Rules | Strict Syntax |
+| Used for Planning | Used for Execution |
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🔍 Dry Run
+
+### Example
+
+Input
+
+```text
+Marks = 80
+```
+
+Execution
+
+```text
+START
+
+↓
+
+INPUT Marks = 80
+
+↓
+
+80 >= 35
+
+↓
+
+TRUE
+
+↓
+
+OUTPUT "Pass"
+
+↓
+
+STOP
+```
+
+━━━━━━━━━━━━━━
+
+Input
+
+```text
+Marks = 20
+```
+
+Execution
+
+```text
+START
+
+↓
+
+INPUT Marks = 20
+
+↓
+
+20 >= 35
+
+↓
+
+FALSE
+
+↓
+
+OUTPUT "Fail"
+
+↓
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🧠 Memory Tricks
+
+```text
+IF
+
+↓
+
+Condition TRUE
+
+━━━━━━━━━━━━━━
+
+ELSE
+
+↓
+
+Condition FALSE
+
+━━━━━━━━━━━━━━
+
+INPUT
+
+↓
+
+Read Data
+
+━━━━━━━━━━━━━━
+
+OUTPUT
+
+↓
+
+Display Result
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# ❌ Common Mistakes
+
+## ❌ Mistake 1
+
+Using different variable names.
+
+Wrong
+
+```text
+INPUT Number
+
+IF Age >= 18
+```
+
+Correct
+
+```text
+INPUT Age
+
+IF Age >= 18
+```
+
+━━━━━━━━━━━━━━
+
+## ❌ Mistake 2
+
+Using only IF when both outcomes are needed.
+
+Wrong
+
+```text
+IF Marks >= 35
+
+OUTPUT "Pass"
+```
+
+Correct
+
+```text
+IF Marks >= 35
+
+OUTPUT "Pass"
+
+ELSE
+
+OUTPUT "Fail"
+```
+
+━━━━━━━━━━━━━━
+
+## ❌ Mistake 3
+
+Forgetting STOP.
+
+Always end the pseudocode with:
+
+```text
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 💡 Interview Tips
+
+Before writing Java code:
+
+```text
+Understand Problem
+
+↓
+
+Write Algorithm
+
+↓
+
+Write Pseudocode
+
+↓
+
+Write Java Code
+```
+
+This improves logical thinking and helps during coding interviews.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📚 Quick Revision
+
+```text
+IF
+
+↓
+
+Condition is TRUE
+
+━━━━━━━━━━━━━━
+
+ELSE
+
+↓
+
+Condition is FALSE
+
+━━━━━━━━━━━━━━
+
+INPUT
+
+↓
+
+Read Data
+
+━━━━━━━━━━━━━━
+
+OUTPUT
+
+↓
+
+Display Result
+
+━━━━━━━━━━━━━━
+
+START
+
+↓
+
+Program Begins
+
+━━━━━━━━━━━━━━
+
+STOP
+
+↓
+
+Program Ends
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🎯 Day 25 Summary
+
+```text
+✅ IF Statement
+
+✅ ELSE Statement
+
+✅ Decision Making
+
+✅ Even or Odd
+
+✅ Voting Eligibility
+
+✅ Greater of Two Numbers
+
+✅ Pass or Fail
+
+✅ Java vs Pseudocode
+
+✅ Dry Run
+
+✅ Common Mistakes
+
+✅ Interview Tips
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🏆 Day 25 Status
+
+```text
+✅ IF Completed
+
+✅ ELSE Completed
+
+✅ Decision Making Completed
+
+🔥 XP Earned: 200
+
+📅 Day 25 Completed Successfully
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📈 Confidence Meter
+
+⭐⭐⭐⭐⭐
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🎯 Next (Day 26)
+
+```text
+✅ FOR Loop
+
+✅ WHILE Loop
+
+✅ Loop Dry Runs
+
+✅ Loop Pseudocode
+
+✅ Java vs Pseudocode
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
