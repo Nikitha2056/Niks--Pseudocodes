@@ -1,0 +1,701 @@
+# 🚀 Pseudocode Day 26 – FOR Loop & WHILE Loop
+
+> 📌 Difficulty: Beginner → Easy
+>
+> 🎯 Category: Pseudocode
+>
+> ⭐ Interview Importance: ⭐⭐⭐⭐⭐
+>
+> ⏳ Revision Time: 20 Minutes
+>
+> 🔥 XP: 200
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📖 What is a Loop?
+
+A **loop** is used to execute the same set of instructions **multiple times**.
+
+Instead of writing the same code repeatedly, we use loops.
+
+### Real-Life Example
+
+Suppose your teacher asks you to print:
+
+```text
+Hello
+```
+
+10 times.
+
+Without a loop, you would write:
+
+```text
+OUTPUT "Hello"
+OUTPUT "Hello"
+OUTPUT "Hello"
+...
+```
+
+With a loop, you write one statement, and the loop repeats it.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Types of Loops
+
+There are two basic loops we learn first.
+
+### ✅ FOR Loop
+
+Used when we **know the number of iterations**.
+
+Example
+
+```text
+Print numbers from 1 to 10.
+```
+
+━━━━━━━━━━━━━━
+
+### ✅ WHILE Loop
+
+Used when we **don't know how many times the loop will execute**.
+
+The loop continues until the condition becomes false.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 FOR Loop
+
+## Syntax
+
+```text
+START
+
+FOR i = Start TO End
+
+    Statements
+
+END FOR
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Example 1
+
+Print numbers from **1 to 5**
+
+### Pseudocode
+
+```text
+START
+
+FOR i = 1 TO 5
+
+    OUTPUT i
+
+END FOR
+
+STOP
+```
+
+### Output
+
+```text
+1
+2
+3
+4
+5
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Example 2
+
+Print numbers from **1 to 10**
+
+### Pseudocode
+
+```text
+START
+
+FOR i = 1 TO 10
+
+    OUTPUT i
+
+END FOR
+
+STOP
+```
+
+Output
+
+```text
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Example 3
+
+Print numbers from **5 to 1**
+
+### Pseudocode
+
+```text
+START
+
+FOR i = 5 TO 1 STEP -1
+
+    OUTPUT i
+
+END FOR
+
+STOP
+```
+
+Output
+
+```text
+5
+4
+3
+2
+1
+```
+
+### ⭐ New Concept
+
+```text
+STEP -1
+
+↓
+
+Moves Backward
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 WHILE Loop
+
+## Syntax
+
+```text
+START
+
+SET i = 1
+
+WHILE i <= Limit
+
+    OUTPUT i
+
+    SET i = i + 1
+
+END WHILE
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Example
+
+Print numbers from **1 to 5**
+
+```text
+START
+
+SET i = 1
+
+WHILE i <= 5
+
+    OUTPUT i
+
+    SET i = i + 1
+
+END WHILE
+
+STOP
+```
+
+Output
+
+```text
+1
+2
+3
+4
+5
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 FOR vs WHILE
+
+| FOR Loop | WHILE Loop |
+|-----------|------------|
+| Number of iterations is known | Number of iterations is unknown |
+| Easier for counting | Easier for condition-based repetition |
+| Initialization, condition and update are controlled by the loop | Initialization and update are written separately |
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 💻 Java vs Pseudocode
+
+## FOR Loop
+
+### Pseudocode
+
+```text
+FOR i = 1 TO 5
+
+    OUTPUT i
+
+END FOR
+```
+
+### Java
+
+```java
+for(int i = 1; i <= 5; i++){
+
+    System.out.println(i);
+
+}
+```
+
+━━━━━━━━━━━━━━
+
+## WHILE Loop
+
+### Pseudocode
+
+```text
+SET i = 1
+
+WHILE i <= 5
+
+    OUTPUT i
+
+    SET i = i + 1
+
+END WHILE
+```
+
+### Java
+
+```java
+int i = 1;
+
+while(i <= 5){
+
+    System.out.println(i);
+
+    i++;
+
+}
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📘 Even Numbers using FOR Loop
+
+### Method 1 (Using IF)
+
+```text
+START
+
+FOR i = 2 TO 10
+
+    IF i % 2 == 0
+
+        OUTPUT i
+
+    END IF
+
+END FOR
+
+STOP
+```
+
+Output
+
+```text
+2
+4
+6
+8
+10
+```
+
+━━━━━━━━━━━━━━
+
+### Method 2 (Better Method)
+
+```text
+START
+
+FOR i = 2 TO 10 STEP 2
+
+    OUTPUT i
+
+END FOR
+
+STOP
+```
+
+Output
+
+```text
+2
+4
+6
+8
+10
+```
+
+⭐ **Interview Tip:** This method is more efficient because it skips odd numbers directly.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🔍 Dry Run
+
+Example
+
+```text
+FOR i = 1 TO 3
+
+OUTPUT i
+
+END FOR
+```
+
+Execution
+
+```text
+START
+
+↓
+
+i = 1
+
+↓
+
+OUTPUT 1
+
+↓
+
+i = 2
+
+↓
+
+OUTPUT 2
+
+↓
+
+i = 3
+
+↓
+
+OUTPUT 3
+
+↓
+
+STOP
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🧠 Memory Tricks
+
+## FOR Loop
+
+```text
+Know Number of Times
+
+↓
+
+Use FOR
+```
+
+━━━━━━━━━━━━━━
+
+## WHILE Loop
+
+```text
+Know the Condition
+
+↓
+
+Use WHILE
+```
+
+━━━━━━━━━━━━━━
+
+## STEP -1
+
+```text
+Forward
+
+↓
+
+STEP +1 (Default)
+
+━━━━━━━━━━━━━━
+
+Backward
+
+↓
+
+STEP -1
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# ❌ Common Mistakes
+
+## Mistake 1
+
+Forgetting `END FOR`
+
+❌ Wrong
+
+```text
+FOR i = 1 TO 5
+
+OUTPUT i
+```
+
+✅ Correct
+
+```text
+FOR i = 1 TO 5
+
+OUTPUT i
+
+END FOR
+```
+
+━━━━━━━━━━━━━━
+
+## Mistake 2
+
+Forgetting to update the variable in WHILE.
+
+❌ Wrong
+
+```text
+WHILE i <= 5
+
+OUTPUT i
+```
+
+This creates an **infinite loop**.
+
+✅ Correct
+
+```text
+WHILE i <= 5
+
+OUTPUT i
+
+SET i = i + 1
+```
+
+━━━━━━━━━━━━━━
+
+## Mistake 3
+
+Printing in reverse without `STEP -1`.
+
+Correct
+
+```text
+FOR i = 5 TO 1 STEP -1
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 💡 Interview Questions
+
+## Q1
+
+When should we use a FOR loop?
+
+**Answer**
+
+When the number of iterations is known.
+
+━━━━━━━━━━━━━━
+
+## Q2
+
+When should we use a WHILE loop?
+
+**Answer**
+
+When the loop depends on a condition.
+
+━━━━━━━━━━━━━━
+
+## Q3
+
+Why do we use `STEP -1`?
+
+**Answer**
+
+To move backwards while iterating.
+
+━━━━━━━━━━━━━━
+
+## Q4
+
+What happens if we don't update the variable in a WHILE loop?
+
+**Answer**
+
+The loop may run forever (Infinite Loop).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📚 Quick Revision
+
+```text
+Loop
+
+↓
+
+Repeat Instructions
+
+━━━━━━━━━━━━━━
+
+FOR
+
+↓
+
+Known Number of Times
+
+━━━━━━━━━━━━━━
+
+WHILE
+
+↓
+
+Condition Based
+
+━━━━━━━━━━━━━━
+
+STEP -1
+
+↓
+
+Reverse Counting
+
+━━━━━━━━━━━━━━
+
+SET
+
+↓
+
+Assign Value
+
+━━━━━━━━━━━━━━
+
+END FOR
+
+↓
+
+Ends FOR Loop
+
+━━━━━━━━━━━━━━
+
+END WHILE
+
+↓
+
+Ends WHILE Loop
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🏆 Day 26 Summary
+
+```text
+✅ Loop
+
+✅ FOR Loop
+
+✅ WHILE Loop
+
+✅ Forward Counting
+
+✅ Reverse Counting
+
+✅ STEP -1
+
+✅ Even Numbers
+
+✅ Java vs Pseudocode
+
+✅ Dry Run
+
+✅ Common Mistakes
+
+✅ Interview Questions
+
+✅ Quick Revision
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📈 Confidence Meter
+
+⭐⭐⭐⭐⭐
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🎯 Frequently Asked In
+
+✅ TCS
+
+✅ Infosys
+
+✅ Accenture
+
+✅ Cognizant
+
+✅ Capgemini
+
+✅ Wipro
+
+✅ Deloitte
+
+✅ Tech Mahindra
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 🏆 Day 26 Status
+
+```text
+✅ FOR Loop Completed
+
+✅ WHILE Loop Completed
+
+🔥 XP Earned: 200
+
+📅 Day 26 Completed Successfully
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
