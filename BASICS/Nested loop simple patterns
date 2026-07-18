@@ -1,0 +1,589 @@
+# 📄 Day 27 – Pseudocode Notes
+## 🎯 Topic: Nested FOR Loops & Pattern Printing
+
+> 💡 **Goal:** Learn how to use nested loops to print patterns. This concept is very important for Java, DSA, coding interviews, and placement exams.
+
+---
+
+# 📚 What is Pseudocode?
+
+Pseudocode is a simple way of writing the logic of a program using plain English.
+
+It is **not** a programming language.
+
+It helps us understand the algorithm before writing code.
+
+### Example
+
+```text
+START
+
+INPUT Number
+
+OUTPUT Number
+
+STOP
+```
+
+---
+
+# 📚 What is a Nested Loop?
+
+A nested loop means **one loop inside another loop**.
+
+```text
+FOR i = 1 TO 3
+
+    FOR j = 1 TO 3
+
+        OUTPUT "*"
+
+    END FOR
+
+END FOR
+```
+
+---
+
+# 🎯 Real-Life Example
+
+Imagine a classroom.
+
+```
+Row 1 → 👨 👩 👨 👩
+
+Row 2 → 👨 👩 👨 👩
+
+Row 3 → 👨 👩 👨 👩
+```
+
+- Outer Loop → Rows
+- Inner Loop → Columns (Students)
+
+---
+
+# 📌 Memory Trick
+
+```
+Outer Loop
+      ↓
+Rows
+
+Inner Loop
+      ↓
+Columns
+```
+
+Always remember:
+
+```
+Rows → Outer Loop
+
+Columns → Inner Loop
+```
+
+---
+
+# ⭐ Pattern 1
+
+## Output
+
+```text
+*
+*
+*
+```
+
+## Pseudocode
+
+```text
+START
+
+FOR i = 1 TO 3
+
+    OUTPUT "*"
+
+END FOR
+
+STOP
+```
+
+---
+
+## Java Code
+
+```java
+for(int i = 1; i <= 3; i++) {
+    System.out.println("*");
+}
+```
+
+---
+
+# ⭐ Pattern 2
+
+## Output
+
+```text
+***
+***
+***
+```
+
+## Pseudocode
+
+```text
+START
+
+FOR i = 1 TO 3
+
+    FOR j = 1 TO 3
+
+        OUTPUT "*" WITHOUT NEWLINE
+
+    END FOR
+
+    OUTPUT NEWLINE
+
+END FOR
+
+STOP
+```
+
+---
+
+## Java Code
+
+```java
+for(int i = 1; i <= 3; i++) {
+
+    for(int j = 1; j <= 3; j++) {
+
+        System.out.print("*");
+
+    }
+
+    System.out.println();
+
+}
+```
+
+---
+
+# ⭐ Pattern 3
+
+## Output
+
+```text
+****
+****
+```
+
+## Java Code
+
+```java
+for(int i = 1; i <= 2; i++) {
+
+    for(int j = 1; j <= 4; j++) {
+
+        System.out.print("*");
+
+    }
+
+    System.out.println();
+
+}
+```
+
+---
+
+# ⭐ Pattern 4
+
+## Output
+
+```text
+111
+111
+111
+```
+
+## Java Code
+
+```java
+for(int i = 1; i <= 3; i++) {
+
+    for(int j = 1; j <= 3; j++) {
+
+        System.out.print("1");
+
+    }
+
+    System.out.println();
+
+}
+```
+
+---
+
+# ⭐ Pattern 5
+
+## Output
+
+```text
+123
+123
+123
+```
+
+### Method 1 (Easy)
+
+```java
+for(int i = 1; i <= 3; i++) {
+
+    System.out.println("123");
+
+}
+```
+
+### Method 2 (Interview Method ✅)
+
+```java
+for(int i = 1; i <= 3; i++) {
+
+    for(int j = 1; j <= 3; j++) {
+
+        System.out.print(j);
+
+    }
+
+    System.out.println();
+
+}
+```
+
+### Why Method 2?
+
+Because it shows that you understand how nested loops generate the output instead of printing a fixed string.
+
+---
+
+# ⭐ Pattern 6
+
+## Output
+
+```text
+12
+12
+```
+
+### Easy Method
+
+```java
+for(int i = 1; i <= 2; i++) {
+
+    System.out.println("12");
+
+}
+```
+
+### Interview Method
+
+```java
+for(int i = 1; i <= 2; i++) {
+
+    for(int j = 1; j <= 2; j++) {
+
+        System.out.print(j);
+
+    }
+
+    System.out.println();
+
+}
+```
+
+---
+
+# 📚 Dry Run
+
+Example
+
+```java
+for(int i = 1; i <= 2; i++) {
+
+    for(int j = 1; j <= 3; j++) {
+
+        System.out.print("*");
+
+    }
+
+    System.out.println();
+
+}
+```
+
+### Iteration 1
+
+```
+i = 1
+
+j = 1 → *
+
+j = 2 → *
+
+j = 3 → *
+
+Output
+
+***
+```
+
+### Iteration 2
+
+```
+i = 2
+
+j = 1 → *
+
+j = 2 → *
+
+j = 3 → *
+
+Output
+
+***
+```
+
+Final Output
+
+```text
+***
+***
+```
+
+---
+
+# 📚 Algorithm
+
+1. Start.
+2. Run the outer loop for each row.
+3. Run the inner loop for each column.
+4. Print the required character or number.
+5. After the inner loop ends, move to the next line.
+6. Repeat until all rows are printed.
+7. Stop.
+
+---
+
+# ⚡ Time Complexity
+
+If there are **n rows** and **m columns**:
+
+```
+Time Complexity = O(n × m)
+```
+
+Example
+
+```
+3 × 3
+
+= 9 iterations
+```
+
+---
+
+# ⚡ Space Complexity
+
+```
+O(1)
+```
+
+No extra memory is used except loop variables.
+
+---
+
+# 🎯 Interview Tips
+
+✅ Always identify:
+
+- Number of Rows
+- Number of Columns
+
+Then write:
+
+```
+Outer Loop → Rows
+
+Inner Loop → Columns
+```
+
+This solves most pattern problems.
+
+---
+
+# ❌ Common Mistakes
+
+### Mistake 1
+
+```java
+System.out.println(" ");
+```
+
+✅ Better
+
+```java
+System.out.println();
+```
+
+---
+
+### Mistake 2
+
+Printing a fixed string every time.
+
+```java
+System.out.print("123");
+```
+
+Better for interviews:
+
+```java
+System.out.print(j);
+```
+
+---
+
+### Mistake 3
+
+Forgetting the new line after the inner loop.
+
+Wrong
+
+```java
+***
+******
+***
+```
+
+Correct
+
+```text
+***
+***
+***
+```
+
+---
+
+# 🧠 Quick Revision
+
+```
+Nested Loop
+
+↓
+
+Loop inside another loop
+
+↓
+
+Outer Loop
+
+↓
+
+Rows
+
+↓
+
+Inner Loop
+
+↓
+
+Columns
+
+↓
+
+Pattern Printing
+
+↓
+
+Time Complexity
+
+↓
+
+O(n × m)
+
+↓
+
+Space Complexity
+
+↓
+
+O(1)
+```
+
+---
+
+# 🔥 Placement Questions
+
+✅ Print a square pattern
+
+```
+****
+****
+****
+****
+```
+
+✅ Print numbers
+
+```
+1234
+1234
+1234
+1234
+```
+
+✅ Print stars
+
+```
+***
+***
+***
+```
+
+---
+
+# 🏁 Day 27 Summary
+
+✅ Pseudocode Basics
+
+✅ Nested FOR Loops
+
+✅ Pattern Printing
+
+✅ Rows & Columns Concept
+
+✅ Dry Run
+
+✅ Java Implementation
+
+✅ Algorithm
+
+✅ Time Complexity
+
+✅ Space Complexity
+
+✅ Interview Tips
+
+---
+
+# 🏆 XP Earned
+
+```
+📄 Pseudocode : 200 XP ✅
+
+🔥 Total XP : 1250 / 1250
+
+🏅 Day 27 Completed Successfully
+```
